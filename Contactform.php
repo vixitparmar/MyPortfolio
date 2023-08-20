@@ -1,5 +1,20 @@
 <?php
 
+    // Set CORS headers to allow requests from specific origins
+header("Access-Control-Allow-Origin: *"); // Replace with your allowed origin(s)
+
+// Specify allowed HTTP methods
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+
+// Specify allowed headers
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
+// Check the request method
+if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
+    // This is a preflight request, respond with a 200 OK status
+    http_response_code(200);
+    exit();
+}
     use PHPMailer\PHPMailer\PHPMailer;
 
     if (isset($_POST['name']) && isset($_POST['email'])) {
