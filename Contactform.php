@@ -1,7 +1,7 @@
 <?php
 
     // Set CORS headers to allow requests from specific origins
-header("Access-Control-Allow-Origin: *"); // Replace with your allowed origin(s)
+header("Access-Control-Allow-Origin:  https://vixitparmar.github.io/MyPortfolio/"); // Replace with your allowed origin(s)
 
 // Specify allowed HTTP methods
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
