@@ -1,0 +1,256 @@
+@media screen and (max-width: 600px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+}
+
+  .container1 {
+    background-color: var(--secondary);
+    max-width: 600px;
+  }
+
+  header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 98%, 0 100%);
+  }
+
+
+  /* Navigation Bar */
+  .logo {
+    padding-left: 1px;
+  }
+
+  .top-nav {
+    padding-left: 15px;
+    justify-content: space-between;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .hamburger {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.318
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    font-size: 60px;
+  }
+
+
+  /* header section*/
+  .hero {
+    padding-top: 8rem;
+  }
+
+  .contactbtn {
+    display: none;
+  }
+
+
+  .hero .right{
+    margin-left: 15px;
+  }
+  .hero .right .paragraph{
+    width: 200%;
+  }
+
+ .hero .right h6 {
+    font-size: 30px;
+  }
+ 
+  .hero .right h1 {
+    font-size: 28px;
+  }
+
+  .hero .right p {
+    font-size: 1rem;
+    padding-top: 30px;
+  }
+
+  .hero .right h1 span {
+    font-size: 1.6rem;
+    border-right: 0.10em solid var(--primary);
+    white-space: nowrap;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  /* About Section*/
+  .container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  }
+
+  .aboutimg {
+    display: none;
+  }
+
+  /* Resume Section */
+  .resume {
+    padding-top: 7rem;
+    width: 100%;
+    clip-path: polygon(0 0, 15% 0.8%, 100% 0, 100% 100%, 80% 99.4%, 0 100%);
+  }
+
+  .resume {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .resume .section-title h2 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .resume .section-title p {
+    font-size: 1rem;
+    width: 155%;
+  }
+
+  .resume .resume-title {
+    font-size: 20px;
+  }
+
+  .resume .resume-item h4 {
+    font-size: 29px;
+    color: var(--primary);
+  }
+
+  .resume .resume-item p {
+    font-size: 1rem;
+    width: 170%;
+    line-height: 1.6;
+  }
+
+  .resume .resume-item ul {
+    width: 140%;
+    font-size: 1.5rem;
+  }
+
+  #resumetxt {
+    font-size: 20px;
+  }
+
+  .resume .resume-item h5 {
+    font-size: 1.7rem;
+  }
+
+  .resume .resume-item p #emtxt {
+    color: bisque;
+    font-size: 15px;
+  }
+
+  /* Services section*/
+  .container4 {
+    padding: 30px;
+  }
+
+  .services-head {
+    font-size: 30px;
+  }
+
+  section.services .card-flex {
+    padding-top: 30px;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* column-gap: 2rem; */
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .services-head+p {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+ 
+
+  section.services .card-flex .card {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  section.services .card-flex .card h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Contact Section*/
+  .contact {
+    clip-path: polygon(0 0, 16% 1.5%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .contact .section-title {
+    padding-top: 4rem;
+  }
+  .contact .info {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .contact .info i {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact .info h4 {
+    font-size: 24px;
+  }
+
+  .contact .info p {
+    font-size: 1rem;
+  }
+
+  #conttxt {
+    font-size: 40px;
+    color: var(--primary);
+  }
+
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    font-size: 12px;
+    height: 36px;
+  }
+
+  .contact .php-email-form button[type=submit] {
+    padding: 8px 20px;
+  }
+
+}
