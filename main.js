@@ -128,7 +128,7 @@ function reveal() {
 
     const formData = new FormData(this);
     const messageContainer = document.getElementById("messageContainer");
-    messageContainer.innerHTML = '<p>Sending email...</p>';
+    messageContainer.innerHTML = '<p>Sending Message.....</p>';
 
     fetch('Contactform.php', {
         method: 'POST',
