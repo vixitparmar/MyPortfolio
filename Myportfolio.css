@@ -51,7 +51,9 @@ h2 {
 .top-nav {
     display: flex;
 }
-
+.typed{
+    font-size: 40px;
+}
 .overlay-content {
     padding-top: 12px;
     padding-left: 30px;
@@ -85,11 +87,8 @@ h2 {
 .top-nav img {
     border-radius: 50%;
 }
-
-.hero {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    display: flex;
+.hero{
+    padding-bottom: 17px;
 }
 
 .hero .left {
@@ -109,24 +108,17 @@ h2 {
     margin-top: -7rem;
 }
 
-.hero .right h6 {
-    font-size: 2rem;
+.hero .right h3 {
     color: var(--primary);
     margin-bottom: 0.5rem;
+    padding-bottom: 20px;
 }
 
-.hero .right h1 {
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-}
-
-.hero .right h1 span {
+.hero .right h4 span {
     color: var(--primary);
     border-right: 0.05em solid var(--primary);
     white-space: nowrap;
-
+    /* padding-bottom: 20px; */
 }
 
 .hero .right p {
