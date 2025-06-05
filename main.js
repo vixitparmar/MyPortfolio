@@ -144,7 +144,7 @@ function reveal() {
     })
     .catch(error => {
         console.error('Error:', error);
-        messageContainer.innerHTML = '<p>An error occurred while sending the email.</p>';
+        messageContainer.innerHTML = '<p style="color: red;">An error occurred while sending the email.</p>';
     });
 
     this.reset();

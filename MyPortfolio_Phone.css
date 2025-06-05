@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
   body {
     font-family: 'Poppins', sans-serif;
-}
+  }
 
   .container1 {
     background-color: var(--secondary);
@@ -19,7 +19,7 @@
   }
 
   .top-nav {
-    padding-left: 15px;
+    padding: 25px 13px 10px 13px;
     justify-content: space-between;
   }
 
@@ -39,15 +39,14 @@
   .hamburger {
     display: block;
     color: rgb(255, 255, 255);
-    padding-top: 10px;
+    padding: 5px 5px 0px 0px;
   }
 
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 17%;
     width: 100%;
-    margin-left: 45px;
-    margin-top: 30px;
+    margin-left: 10px;
   }
 
   .overlay a {
@@ -66,191 +65,200 @@
 
   .overlay .closebtn {
     position: absolute;
-    top: 8px;
-    right: 18px;
-    font-size: 60px;
+    top: 0px;
+    right: 0px;
+    font-size: 56px;
   }
 
 
   /* header section*/
-  .hero {
-    padding-top: 8rem;
-  }
+    .hero {
+      padding-top: 8rem;
+      padding-bottom: 3rem;
+    }
 
-  .contactbtn {
-    display: none;
-  }
+    .contactbtn {
+      display: none;
+    }
 
 
-  .hero .right{
-    margin-left: 15px;
-  }
-  .hero .right .paragraph{
-    width: 200%;
-  }
+    .hero .right {
+      margin-left: 15px;
+    }
 
- .hero .right h6 {
-    font-size: 30px;
-  }
- 
-  .hero .right h1 {
-    font-size: 28px;
-  }
+    .hero .right .paragraph {
+      width: 200%;
+    }
 
-  .hero .right p {
-    font-size: 1rem;
-    padding-top: 30px;
-  }
+    .hero .right h6 {
+      font-size: 30px;
+    }
 
-  .hero .right h1 span {
-    font-size: 1.6rem;
-    border-right: 0.10em solid var(--primary);
-    white-space: nowrap;
-  }
+    .hero .right h1 {
+      font-size: 28px;
+    }
 
-  .profile {
-    display: none;
-  }
+    .hero .right p {
+      font-size: 1rem;
+      padding-top: 30px;
+      width: 51%;
+    }
 
-  /* About Section*/
-  .container2 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 2rem;
-  }
+    .hero .right h1 span {
+      font-size: 1.6rem;
+      border-right: 0.10em solid var(--primary);
+      white-space: nowrap;
+    }
 
-  .aboutimg {
-    display: none;
-  }
+    .profile {
+      display: none;
+    }
 
-  /* Resume Section */
-  .resume {
-    padding-top: 7rem;
-    width: 100%;
-    clip-path: polygon(0 0, 15% 0.8%, 100% 0, 100% 100%, 80% 99.4%, 0 100%);
-  }
+    /* About Section*/
+    .container2 {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 2rem;
+    }
 
-  .resume {
-    padding-left: 1rem;
-    font-size: 1rem;
-  }
+    .aboutimg {
+      display: none;
+    }
 
-  .resume .section-title h2 {
-    font-size: 3rem;
-    text-align: left;
-  }
+    /* Resume Section */
+    .resume {
+      padding-top: 1.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100%;
+      font-size: 1rem;
+      clip-path: none;
+      box-sizing: border-box;
+      /* clip-path: polygon(0 0, 16% 1.2%, 100% 0, 100% 100%, 0 100%); */
+    }
 
-  .resume .section-title p {
-    font-size: 1rem;
-    width: 155%;
-  }
+    .resume .section-title h2 {
+      font-size: 2rem;
+    }
 
-  .resume .resume-title {
-    font-size: 20px;
-  }
+    .resume .section-title p {
+      font-size: 1rem;
+      width: 100%;
+      /* ✅ Fix overflow */
+      padding: 0;
+    }
 
-  .resume .resume-item h4 {
-    font-size: 29px;
-    color: var(--primary);
-  }
+    .resume .resume-title {
+      font-size: 1.5rem;
+    }
 
-  .resume .resume-item p {
-    font-size: 1rem;
-    width: 170%;
-    line-height: 1.6;
-  }
+    .resume .resume-item h4,
+    .resume .resume-item h5 {
+      font-size: 1.2rem;
+    }
 
-  .resume .resume-item ul {
-    width: 140%;
-    font-size: 1.5rem;
-  }
+    .resume .resume-item p {
+      font-size: 1rem;
+      width: 100%;
+      /* ✅ Fix overflow */
+      line-height: 1.6;
+      padding-right: 0;
+    }
 
-  #resumetxt {
-    font-size: 20px;
-  }
+    .resume .resume-item ul {
+      width: 100%;
+      /* ✅ Fix overflow */
+      font-size: 1rem;
+      padding-left: 20px;
+    }
 
-  .resume .resume-item h5 {
-    font-size: 1.7rem;
-  }
+    #resumetxt {
+      font-size: 1.1rem;
+    }
 
-  .resume .resume-item p #emtxt {
-    color: bisque;
-    font-size: 15px;
-  }
+    .resume .resume-item p #emtxt {
+      font-size: 0.9rem;
+    }
 
-  /* Services section*/
-  .container4 {
-    padding: 30px;
-  }
+    /* Responsive column stacking */
+    .resume .row {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
 
-  .services-head {
-    font-size: 30px;
-  }
+    /* Services section*/
+    .container4 {
+      padding: 30px;
+    }
 
-  section.services .card-flex {
-    padding-top: 30px;
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* column-gap: 2rem; */
-    flex-direction: column;
-    row-gap: 2rem;
-  }
+    .services-head {
+      font-size: 30px;
+    }
 
-  .services-head+p {
-    font-size: 24px;
-    margin-bottom: 1rem;
-  }
- 
+    section.services .card-flex {
+      padding-top: 30px;
+      display: flex;
+      /* grid-template-columns: repeat(2, 1fr); */
+      /* column-gap: 2rem; */
+      flex-direction: column;
+      row-gap: 2rem;
+    }
 
-  section.services .card-flex .card {
-    padding: 2rem;
-    justify-content: center;
-  }
+    .services-head+p {
+      font-size: 16px;
+      margin-bottom: 1rem;
+    }
 
-  section.services .card-flex .card h2 {
-    font-size: 1.6rem;
-  }
 
-  /* Contact Section*/
-  .contact {
-    clip-path: polygon(0 0, 16% 1.5%, 100% 0, 100% 100%, 0 100%);
-  }
+    section.services .card-flex .card {
+      padding: 2rem;
+      justify-content: center;
+    }
 
-  .contact .section-title {
-    padding-top: 4rem;
-  }
-  .contact .info {
-    padding: 20px;
-    margin-top: 30px;
-  }
+    section.services .card-flex .card h2 {
+      font-size: 19px;
+      margin-top: 25px;
+    }
 
-  .contact .info i {
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-  }
+    /* Contact Section*/
 
-  .contact .info h4 {
-    font-size: 24px;
-  }
+    .contact .section-title {
+      padding-top: 1rem;
+    }
 
-  .contact .info p {
-    font-size: 1rem;
-  }
+    .contact .info {
+      padding: 20px;
+      margin-top: 30px;
+    }
 
-  #conttxt {
-    font-size: 40px;
-    color: var(--primary);
-  }
+    .contact .info i {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+    }
 
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    font-size: 12px;
-    height: 36px;
-  }
+    .contact .info h4 {
+      font-size: 24px;
+    }
 
-  .contact .php-email-form button[type=submit] {
-    padding: 8px 20px;
-  }
+    .contact .info p {
+      font-size: 1rem;
+    }
 
-}
+    #conttxt {
+      font-size: 40px;
+      color: var(--primary);
+    }
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+      font-size: 12px;
+      height: 36px;
+    }
+
+    .contact .php-email-form button[type=submit] {
+      padding: 8px 20px;
+    }
+
+  }
